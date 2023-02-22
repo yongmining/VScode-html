@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합 실습 문제2</title>
+</head>
+<body>
+    <fieldset>
+        <legend>납품자 정보</legend>
+        <ol>
+        <li><label>납품자명 : </label>
+        <input type="text" name="name" placeholder="name" maxlength="15">
+        </li>
+        <li><label>email : </label>
+        <input type="email" name="email" placeholder="gpsyo@naver.com" maxlength="15">
+        </li>
+        <li><label>홈페이지 : </label>
+        <input type="homepage" name="homepage" placeholder="http://" maxlength="15">
+        </li>
+        </ol>
+    </fieldset>
+   
+    <fieldset>
+        <legend>납품 정보</legend>
+        <ul>
+        <li><label>상품명 : </label>
+        <input type="productName" name="productName" maxlength="15">
+        </li>
+        <br>
+
+        <li>
+        <label>상품수량 : </label>
+        <input type="productNum" name="productNum" placeholder="최소 100" maxlength="15">
+        </li>
+        <br>
+
+        <li>
+        <label>납품등급 : </label>
+        <input type="range" name="rank" min="1" max="100" step="1">
+        </li>
+
+        <br>
+
+        <li>
+        <label>기타사항 : </label>
+        <textarea cols="20" rows="3" name="order"></textarea>
+        </li>
+        <br>
+
+        </ul>
+    </fieldset>
+
+    <input type="submit" value="send message">
+    
+</body>
+</html>
